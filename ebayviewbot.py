@@ -14,7 +14,7 @@ def init():
     os.system('cls')
     print("Sending views to"+Fore.GREEN+" "+eBayURL + Fore.WHITE)
     for i in range(int(eBayViews)):
-        if proxies == "":
+        if not proxies:
             rq = requests.get(eBayURL)
             print(Fore.GREEN+"[Success] Sent view without using a proxy")
         else:
